@@ -2,3 +2,14 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.stack {
+  display: flex;
+  gap: 1rem;
+}
+.f-width {
+  width: 100%;
+}
+.column {
+  flex-direction: column;
+}
