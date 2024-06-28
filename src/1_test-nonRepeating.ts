@@ -1,6 +1,6 @@
 /*
     Given a string s, 
-    find the first non-repeating character in it and return its index. 
+    find the first non-repeating character in the entire string and return its index. 
     If it does not exist, return -1.
     Examples:
     firstUniqChar("wwoorks") // 4
