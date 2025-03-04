@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { FC, useEffect, useRef, useState } from 'react';
-import { fetchUser, UserEntity } from './api';
 import { AxiosError } from 'axios';
+import { FC } from 'react';
+import { fetchUser } from './api';
 
 type Props = {
   userId: number | null;
@@ -13,8 +13,6 @@ type Props = {
 export const User: FC<Props> = ({ userId }) => {
   // Write your solution here:
   const user = userId && fetchUser({ id: userId });
-  if (!user) return null;
-
   if (!user) return null;
 
   return (
