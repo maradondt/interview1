@@ -1,5 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+
 // Given a set of two-dimensional points, compute a bounding box area.
+
+// Для заданного набора двумерных точек вычислите площадь ограничивающего прямоугольника.
 
 type Points = Array<[number, number]>;
 const getBoundingBoxArea = (points: Points) => {
