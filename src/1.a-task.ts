@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // Given a set of two-dimensional points, compute a bounding box area.
 
 type Points = Array<[number, number]>;
 const getBoundingBoxArea = (points: Points) => {
-  // Solution
+  //
 };
 
 const points: Points = [

@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.active {
+  background-color: #5995de !important;
+  color: white;
+  transition: color background-color 300ms;
+}

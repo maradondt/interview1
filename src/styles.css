@@ -1,6 +1,7 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  height: 100%;
 }
 
 .stack {
@@ -12,4 +13,7 @@
 }
 .column {
   flex-direction: column;
+}
+.mt-a {
+  margin-top: auto;
 }

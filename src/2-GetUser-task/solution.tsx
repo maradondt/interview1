@@ -1,0 +1,34 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { FC, useEffect, useRef, useState } from 'react';
+import { fetchUser, UserEntity } from './api';
+import { AxiosError } from 'axios';
+
+type Props = {
+  userId: number | null;
+};
+
+/**
+ * Написать компонент который будет получать пользователя по {{userId}} и выводить основные данные
+ */
+export const User: FC<Props> = ({ userId }) => {
+  // Write your solution here:
+  const user = userId && fetchUser({ id: userId });
+  if (!user) return null;
+
+  if (!user) return null;
+
+  return (
+    <div className="stack column">
+      <div>UserId: </div>
+      <div>UserName: </div>
+    </div>
+  );
+};
+
+const Loader = () => <p data-testid="loader">loading ...</p>;
+
+const Error = ({ e }: { e: AxiosError }) => (
+  <p style={{ color: 'red' }} data-testid="error">
+    {e.message}
+  </p>
+);

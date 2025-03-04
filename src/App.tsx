@@ -1,25 +1,31 @@
 import './styles.css';
 import './App.css';
 
-import './1_test-nonRepeating.ts';
-import './1-2_getBoundingBox.ts';
-import Timer from './2_test-timer-component';
-// import './3_test-getUrls.ts';
-// import './4_test_nodesCleaner.ts';
-// import runTests from './tests';
+import './1-task.ts';
+import './1.a-task.ts';
+import Timer from './2-task.tsx';
+import Selector from './2-GetUser-task/selector.tsx';
+import { useState } from 'react';
 
-/**      Others      */
-// import "./tree";
-// import './fizzBuzz';
+const tabsMap = {
+  timer: <Timer />,
+  getUser: <Selector />,
+};
 
+const tabs = Object.keys(tabsMap) as (keyof typeof tabsMap)[];
 export default function App() {
+  const [activeTab, setActiveTab] = useState(tabs[0]);
   return (
     <div className="App">
-      <h1>Signal interview tasks</h1>
-      <Timer />
-      {/* <Container /> */}
-      {/* <LifeCycle /> */}
-      {/* <button onClick={() => runTests()}>Run task_4 tests</button> */}
+      <h1>Signal Interview</h1>
+      <div className="stack">
+        {tabs.map((tabName, i) => (
+          <button className={tabName === activeTab ? 'active' : ''} key={i} onClick={() => setActiveTab(tabName)}>
+            {tabName}
+          </button>
+        ))}
+      </div>
+      {tabsMap[activeTab]}
     </div>
   );
 }
