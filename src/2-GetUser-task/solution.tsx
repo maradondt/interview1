@@ -9,6 +9,8 @@ type Props = {
 
 /**
  * Написать компонент который будет получать пользователя по {{userId}} и выводить основные данные
+ * 
+ * Для запроса использовать fetchUser
  */
 export const User: FC<Props> = ({ userId }) => {
   // Write your solution here:
