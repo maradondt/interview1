@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { User } from './solution';
+import { User } from '../2.a-task';
 
 const values = [1, 2, 3, 4];
 

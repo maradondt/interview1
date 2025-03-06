@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { AxiosError } from 'axios';
 import { FC } from 'react';
-import { fetchUser } from './api';
+import { fetchUser } from './2-GetUser-task/api';
 
 type Props = {
   userId: number | null;
@@ -9,7 +9,7 @@ type Props = {
 
 /**
  * Написать компонент который будет получать пользователя по {{userId}} и выводить основные данные
- * 
+ *
  * Для запроса использовать fetchUser
  */
 export const User: FC<Props> = ({ userId }) => {
