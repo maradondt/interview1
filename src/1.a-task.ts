@@ -9,17 +9,33 @@ const getBoundingBoxArea = (points: Points) => {
   //
 };
 
-const points: Points = [
-  [1, 1],
-  [2, 3],
-  [5, 5],
+const points1: Points = [
+  [-1, -3],
+  [115, 10],
+  [101, 101],
+  [103, 42],
+  [10, 131],
+  [-49, -142],
+  [-31, -133],
+  [-27, -103],
 ];
 const points2: Points = [
-  [-10, -10],
-  [23, 13],
-  [22, 33],
-  [2, 3],
-  [50, 50],
+  [-152, 313],
+  [15, 130],
+  [24, 36],
+  [244, 24],
+  [24, 47],
+  [46, 36],
+  [26, 24],
+  [57, 35],
+  [15, 64],
+  [74, 68],
+  [37, 75],
+  [48, 64],
+  [59, 354],
+  [15, 24],
+  [-49, -242],
 ];
-console.log(getBoundingBoxArea(points)); //16
-console.log(getBoundingBoxArea(points2)); //3600
+
+console.log(getBoundingBoxArea(points1)); //6068
+console.log(getBoundingBoxArea(points2)); //42768
