@@ -37,5 +37,5 @@ const points2: Points = [
   [-49, -242],
 ];
 
-console.log(getBoundingBoxArea(points1)); //6068
-console.log(getBoundingBoxArea(points2)); //42768
+console.log(getBoundingBoxArea(points1)); // 44772
+console.log(getBoundingBoxArea(points2)); // 236016
