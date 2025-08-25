@@ -24,11 +24,3 @@ export const User: FC<Props> = ({ userId }) => {
     </div>
   );
 };
-
-const Loader = () => <p data-testid="loader">loading ...</p>;
-
-const Error = ({ e }: { e: AxiosError }) => (
-  <p style={{ color: 'red' }} data-testid="error">
-    {e.message}
-  </p>
-);

@@ -37,5 +37,11 @@ const points2: Points = [
   [-49, -242],
 ];
 
+const points3: Points = [
+  [1, 1],
+  [4, 4],
+];
+
 console.log(getBoundingBoxArea(points1)); // 44772
 console.log(getBoundingBoxArea(points2)); // 236016
+console.log(getBoundingBoxArea(points3)); // 9
